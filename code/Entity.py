@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from abc import ABC, abstractmethod
 
 import pygame.image
@@ -19,6 +19,5 @@ class Entity(ABC):
         self.last_dmg = 'None'
 
     @abstractmethod
-    def move(self, ):
+    def move(self):
         pass
-

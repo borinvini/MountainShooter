@@ -1,5 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+import sys
+
 import pygame
 
 from code.Const import WIN_WIDTH, WIN_HEIGHT, MENU_OPTION
@@ -29,11 +31,11 @@ class Game:
                     if level_return:
                         score.save(menu_return, player_score)
 
-
             elif menu_return == MENU_OPTION[3]:
                 score.show()
             elif menu_return == MENU_OPTION[4]:
                 pygame.quit()  # Close Window
                 quit()  # end pygame
             else:
-                pass
+                pygame.quit()
+                sys.exit()
